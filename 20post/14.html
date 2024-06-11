@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Unlock the potential of positive thinking in this insightful guide. Learn how to cultivate optimism, overcome negativity, and create a fulfilling life filled with joy, gratitude, and resilience.">
+    <meta name="keywords" content="positive thinking, optimism, mindset shift, gratitude, resilience">
+    <meta name="author" content="Your Name">
+    <title>The Power of Positive Thinking: Harnessing Optimism for a Fulfilling Life</title>
+
+    
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Dropdown Styles */
+.dropbtn {
+    background-color: #007bff;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    z-index: 1;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    border-radius: 5px;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+header h1 {
+    margin: 0;
+}
+
+.post-page {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.post {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.post-header {
+    margin-bottom: 20px;
+}
+
+.post-title {
+    color: #333;
+    margin: 0;
+}
+
+.post-info {
+    font-size: 14px;
+    color: #666;
+}
+
+
+.post-content {
+    line-height: 1.6;
+}
+.image-container {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.image-container img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto; /* Center the image horizontally */
+    border-radius: 5px;
+}
+
+.widget {
+    width: 250px;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.widget h2 {
+    color: #333;
+    margin-top: 0;
+}
+
+.widget ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.widget ul li {
+    margin-bottom: 10px;
+}
+
+.widget ul li a {
+    text-decoration: none;
+    color: #007bff;
+}
+
+.widget ul li a:hover {
+    text-decoration: underline;
+}
+
+footer {
+            background-color:  #333;/* Dark blue */
+            padding: 20px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            color: #fff;
+        }
+
+        .about-us,
+        .quick-links,
+        .share {
+            flex: 1;
+            margin-right: 20px;
+        }
+
+        .about-us h3,
+        .quick-links h3,
+        .share h3 {
+            margin-bottom: 10px;
+        }
+
+        .quick-links ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .quick-links li {
+            margin-bottom: 5px;
+        }
+
+        .quick-links a {
+            text-decoration: none;
+            color: #ccc;
+        }
+
+        .social-icons {
+            display: flex;
+            align-items: center;
+        }
+
+        .social-icons a {
+            margin-right: 15px;
+            transition: transform 0.3s ease;
+        }
+
+        .social-icons a:hover {
+            transform: scale(1.2);
+        }
+
+        .social-icons img {
+            width: 30px;
+            height: 30px;
+        }
+@media screen and (max-width: 768px) {
+    .post-page {
+        flex-direction: column;
+    }
+
+    .post {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .widget {
+        width: 100%;
+        margin-left: 0;
+    }
+}
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: #fff;
+}
+
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+    }
+
+    header {
+        position: relative;
+    }
+
+    nav {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: #333;
+        z-index: 1000;
+    }
+
+    nav.active {
+        display: block;
+    }
+
+    nav ul {
+        padding: 20px;
+        margin: 0;
+        list-style-type: none;
+        text-align: center;
+    }
+
+    nav ul li {
+        margin-bottom: 10px;
+    }
+
+    nav ul li:last-child {
+        margin-bottom: 0;
+    }
+
+    nav ul li a {
+        color: #fff;
+        text-decoration: none;
+        font-size: 18px;
+    }
+}
+
+@media (min-width: 769px) {
+    nav {
+        display: block;
+    }
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        
+            <div class="container">
+                <h1>Welcome to My Blog</h1>
+                <button class="menu-toggle" aria-label="Toggle Menu">&#9776;</button>
+                <nav>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li class="dropdown">
+                            <a href="#" class="dropbtn">Posts &#9662;</a>
+                            <div class="dropdown-content">
+                                <a href="#">Latest Posts</a>
+                                <a href="#">Categories</a>
+                            </div>
+                        </li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+    </header>
+    <main class="post-page">
+        <article class="post">
+            <div class="post-header">
+                <h2 class="post-title">Post Title</h2>
+                <div class="post-info">
+                    <span class="post-date">Published on May 9, 2024</span>
+                    <span class="post-author">By John Doe</span>
+                </div>
+            </div>
+            <div class="image-container">
+                <img src="https://cdn.pixabay.com/photo/2020/05/23/17/52/strawberries-5210753_640.jpg" alt="Image">
+            </div>
+            <div class="post-content">
+             
+
+    <h1>The Power of Positive Thinking: Harnessing Optimism for a Fulfilling Life</h1>
+
+
+<main>
+    <article>
+        <h3>1. Understanding Positive Thinking</h3>
+        <p>Discover the principles and benefits of positive thinking, including its impact on mental health, physical well-being, and overall life satisfaction. Learn how cultivating a positive mindset can lead to greater resilience, optimism, and success.</p>
+        
+        <h3>2. Cultivating Optimism</h3>
+        <p>Learn practical strategies for cultivating optimism and shifting your mindset towards positivity. From practicing gratitude to reframing negative thoughts, discover how to adopt a more optimistic outlook on life.</p>
+        
+        <h3>3. Overcoming Negativity Bias</h3>
+        <p>Understand the concept of negativity bias and its impact on perception and decision-making. Learn how to recognize and challenge negative thought patterns, and cultivate a more balanced and constructive way of thinking.</p>
+        
+        <h3>4. Practicing Gratitude</h3>
+        <p>Explore the transformative power of gratitude in fostering positivity and well-being. Learn how to cultivate a daily gratitude practice, appreciate the present moment, and find joy in the simple pleasures of life.</p>
+        
+        <h3>5. Building Resilience</h3>
+        <p>Discover the role of resilience in overcoming adversity and bouncing back from setbacks. Learn practical strategies for building resilience, including fostering a growth mindset, developing coping skills, and seeking social support.</p>
+        
+        <h3>6. Nurturing Self-Compassion</h3>
+        <p>Learn how to cultivate self-compassion and kindness towards yourself. Discover the importance of self-care, acceptance, and forgiveness in fostering a positive self-image and inner well-being.</p>
+        
+        <h3>7. Surrounding Yourself with Positivity</h3>
+        <p>Explore the impact of your social environment on your mindset and well-being. Learn how to surround yourself with positive influences, cultivate supportive relationships, and create a nurturing and uplifting environment.</p>
+        
+        <h3>8. Embracing Challenges as Opportunities</h3>
+        <p>Shift your perspective on challenges and setbacks as opportunities for growth and learning. Learn how to reframe obstacles as stepping stones to success, and develop a mindset of resilience, perseverance, and growth.</p>
+        
+        <h3>9. Cultivating Mindfulness and Presence</h3>
+        <p>Discover how mindfulness practices can enhance your ability to stay present and positive amidst life's challenges. Learn simple mindfulness techniques for cultivating awareness, acceptance, and inner peace.</p>
+        
+        <h3>10. Living a Life of Purpose and Meaning</h3>
+        <p>Explore the connection between positivity and living a life of purpose and meaning. Discover how aligning your actions with your values and passions can bring greater fulfillment, satisfaction, and joy.</p>
+    </article>
+            </div>
+        </article>
+        <aside class="widget">
+            <div class="categories">
+                <h2>Categories</h2>
+                <ul>
+                    <li><a href="#">science</a></li>
+                    <li><a href="#">History</a></li>
+                    <li><a href="#">technology</a></li>
+                    <li><a href="#">Geography</a></li>
+                    <li><a href="#">Future</a></li>
+                </ul>
+            </div>
+            <div class="related-posts">
+                <h2>Related Posts</h2>
+                <ul>
+                    <li><a href="#">Related Post 1</a></li>
+                    <li><a href="#">Related Post 2</a></li>
+                    <li><a href="#">Related Post 3</a></li>
+                </ul>
+            </div>
+        </aside>
+    </main>
+    <footer>
+        <div class="about-us">
+            <h3>About Us</h3>
+            <p>We are dedicated to providing quality content and resources for fitness enthusiasts.</p>
+        </div>
+        <div class="quick-links">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+        <div class="share">
+            <h3>Share</h3>
+            <div class="social-icons">
+                <a href="#"><img src="https://cdnjs.cloudflare.com/ajax/libs/simple-icons/3.0.1/instagram.svg" alt="Instagram"></a>
+                <a href="#"><img src="https://cdnjs.cloudflare.com/ajax/libs/simple-icons/3.0.1/twitter.svg" alt="Twitter"></a>
+                <a href="#"><img src="https://cdnjs.cloudflare.com/ajax/libs/simple-icons/3.0.1/facebook.svg" alt="Facebook"></a>
+                <a href="#"><img src="https://cdnjs.cloudflare.com/ajax/libs/simple-icons/3.0.1/youtube.svg" alt="YouTube"></a>
+                <a href="#"><img src="https://cdnjs.cloudflare.com/ajax/libs/simple-icons/3.0.1/gmail.svg" alt="Gmail"></a>
+            </div>
+        </div>
+    </footer>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+    const menuToggle = document.querySelector('.menu-toggle');
+    const featuredToggle = document.querySelector('.toggle-featured');
+    const featuredPosts = document.getElementById('featured-posts');
+
+    menuToggle.addEventListener('click', function () {
+        toggleMenu();
+    });
+
+    featuredToggle.addEventListener('click', function () {
+        featuredPosts.classList.toggle('closed');
+    });
+
+    function toggleMenu() {
+        const nav = document.querySelector('nav');
+        nav.classList.toggle('active');
+    }
+});
+
+    </script>
+</body>
+</html>

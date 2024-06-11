@@ -1,0 +1,446 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Explore personal insights, lessons, and stories from real life in our collection of personal experience articles. From travel adventures to life lessons, discover relatable and inspiring narratives that resonate with readers.">
+    <meta name="keywords" content="personal experience articles, real life stories, personal anecdotes, life lessons, travel adventures">
+    <meta name="author" content="Your Name">
+    <title>Personal Experience: Insights, Lessons, and Stories from Real Life</title>
+
+    
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Dropdown Styles */
+.dropbtn {
+    background-color: #007bff;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    z-index: 1;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    border-radius: 5px;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+
+header h1 {
+    margin: 0;
+}
+
+.post-page {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+}
+
+.post {
+    flex: 1;
+    margin-right: 20px;
+}
+
+.post-header {
+    margin-bottom: 20px;
+}
+
+.post-title {
+    color: #333;
+    margin: 0;
+}
+
+.post-info {
+    font-size: 14px;
+    color: #666;
+}
+
+
+.post-content {
+    line-height: 1.6;
+}
+.image-container {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.image-container img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto; /* Center the image horizontally */
+    border-radius: 5px;
+}
+
+.widget {
+    width: 250px;
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.widget h2 {
+    color: #333;
+    margin-top: 0;
+}
+
+.widget ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.widget ul li {
+    margin-bottom: 10px;
+}
+
+.widget ul li a {
+    text-decoration: none;
+    color: #007bff;
+}
+
+.widget ul li a:hover {
+    text-decoration: underline;
+}
+
+footer {
+            background-color:  #333;/* Dark blue */
+            padding: 20px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            color: #fff;
+        }
+
+        .about-us,
+        .quick-links,
+        .share {
+            flex: 1;
+            margin-right: 20px;
+        }
+
+        .about-us h3,
+        .quick-links h3,
+        .share h3 {
+            margin-bottom: 10px;
+        }
+
+        .quick-links ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .quick-links li {
+            margin-bottom: 5px;
+        }
+
+        .quick-links a {
+            text-decoration: none;
+            color: #ccc;
+        }
+
+        .social-icons {
+            display: flex;
+            align-items: center;
+        }
+
+        .social-icons a {
+            margin-right: 15px;
+            transition: transform 0.3s ease;
+        }
+
+        .social-icons a:hover {
+            transform: scale(1.2);
+        }
+
+        .social-icons img {
+            width: 30px;
+            height: 30px;
+        }
+@media screen and (max-width: 768px) {
+    .post-page {
+        flex-direction: column;
+    }
+
+    .post {
+        margin-right: 0;
+        margin-bottom: 20px;
+    }
+
+    .widget {
+        width: 100%;
+        margin-left: 0;
+    }
+}
+.menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: #fff;
+}
+
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+    }
+
+    header {
+        position: relative;
+    }
+
+    nav {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: #333;
+        z-index: 1000;
+    }
+
+    nav.active {
+        display: block;
+    }
+
+    nav ul {
+        padding: 20px;
+        margin: 0;
+        list-style-type: none;
+        text-align: center;
+    }
+
+    nav ul li {
+        margin-bottom: 10px;
+    }
+
+    nav ul li:last-child {
+        margin-bottom: 0;
+    }
+
+    nav ul li a {
+        color: #fff;
+        text-decoration: none;
+        font-size: 18px;
+    }
+}
+
+@media (min-width: 769px) {
+    nav {
+        display: block;
+    }
+}
+
+    </style>
+</head>
+<body>
+    <header>
+        
+            <div class="container">
+                <h1>Welcome to My Blog</h1>
+                <button class="menu-toggle" aria-label="Toggle Menu">&#9776;</button>
+                <nav>
+                    <ul>
+                        <li><a href="#">Home</a></li>
+                        <li class="dropdown">
+                            <a href="#" class="dropbtn">Posts &#9662;</a>
+                            <div class="dropdown-content">
+                                <a href="#">Latest Posts</a>
+                                <a href="#">Categories</a>
+                            </div>
+                        </li>
+                        <li><a href="#">About</a></li>
+                        <li><a href="#">Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+    </header>
+    <main class="post-page">
+        <article class="post">
+            <div class="post-header">
+                <h2 class="post-title">Post Title</h2>
+                <div class="post-info">
+                    <span class="post-date">Published on May 9, 2024</span>
+                    <span class="post-author">By John Doe</span>
+                </div>
+            </div>
+            <div class="image-container">
+                <img src="https://cdn.pixabay.com/photo/2020/05/16/17/23/cycling-5178398_640.jpg" alt="Image">
+            </div>
+            <div class="post-content">
+                
+                    <h1>Personal Experience: Insights, Lessons, and Stories from Real Life</h1>
+                
+                
+                <main>
+                    <article>
+                        <h3>1. Lessons Learned from Traveling Solo</h3>
+                        <p>Embark on a journey of self-discovery and adventure as I share the valuable lessons learned from traveling solo. From navigating unfamiliar terrain to embracing spontaneity, these personal insights will inspire and enlighten.</p>
+                        
+                        <h3>2. Finding Joy in the Little Things</h3>
+                        <p>Discover the beauty of gratitude and mindfulness as I reflect on finding joy in the little things. From savoring a cup of coffee to watching a sunset, these simple moments of happiness remind us to appreciate the present.</p>
+                        
+                        <h3>3. Overcoming Challenges: A Personal Journey</h3>
+                        <p>Join me on a personal journey of overcoming challenges and adversity. From facing setbacks to finding resilience, this candid exploration of triumph over adversity offers hope and inspiration to anyone navigating difficult times.</p>
+                        
+                        <h3>4. Embracing Change: Lessons from Life's Transitions</h3>
+                        <p>Explore the transformative power of change as I share personal stories and insights from life's transitions. From career changes to relationship shifts, these reflections on embracing change will empower and encourage.</p>
+                        
+                        <h3>5. Lessons Learned from Failure and Success</h3>
+                        <p>Gain valuable insights into the nature of failure and success as I reflect on personal experiences of triumph and defeat. From overcoming setbacks to celebrating victories, these stories illuminate the path to growth and resilience.</p>
+                        
+                        <h3>6. The Power of Vulnerability: A Personal Reflection</h3>
+                        <p>Experience the transformative power of vulnerability as I share personal reflections on authenticity and connection. From embracing imperfection to fostering meaningful relationships, these insights will inspire you to embrace your true self.</p>
+                        
+                        <h3>7. Discovering Passion and Purpose</h3>
+                        <p>Embark on a journey of self-discovery and fulfillment as I share personal stories of finding passion and purpose. From pursuing dreams to following intuition, these reflections offer guidance and inspiration for living a purpose-driven life.</p>
+                        
+                        <h3>8. Learning to Let Go: Lessons in Surrender</h3>
+                        <p>Experience the liberation of letting go as I share personal stories of surrender and release. From relinquishing control to embracing uncertainty, these reflections on surrender offer peace and freedom in the face of change.</p>
+                        
+                        <h3>9. Navigating the Ups and Downs of Parenthood</h3>
+                        <p>Join me on a journey of parenthood as I share personal stories and insights from raising children. From moments of joy to challenges faced, these reflections on parenting offer humor, wisdom, and solidarity to fellow parents.</p>
+                        
+                        <h3>10. Finding Strength in Vulnerability: A Personal Journey</h3>
+                        <p>Experience the transformative power of vulnerability as I share personal stories of resilience and growth. From facing fears to embracing authenticity, these reflections offer inspiration and encouragement for navigating life's challenges with courage and grace.</p>
+                    </article>
+            </div>
+        </article>
+        <aside class="widget">
+            <div class="categories">
+                <h2>Categories</h2>
+                <ul>
+                    <li><a href="#">science</a></li>
+                    <li><a href="#">History</a></li>
+                    <li><a href="#">technology</a></li>
+                    <li><a href="#">Geography</a></li>
+                    <li><a href="#">Future</a></li>
+                </ul>
+            </div>
+            <div class="related-posts">
+                <h2>Related Posts</h2>
+                <ul>
+                    <li><a href="#">Related Post 1</a></li>
+                    <li><a href="#">Related Post 2</a></li>
+                    <li><a href="#">Related Post 3</a></li>
+                </ul>
+            </div>
+        </aside>
+    </main>
+    <footer>
+        <div class="about-us">
+            <h3>About Us</h3>
+            <p>We are dedicated to providing quality content and resources for fitness enthusiasts.</p>
+        </div>
+        <div class="quick-links">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+        <div class="share">
+            <h3>Share</h3>
+            <div class="social-icons">
+                <a href="#"><img src="https://cdnjs.cloudflare.com/ajax/libs/simple-icons/3.0.1/instagram.svg" alt="Instagram"></a>
+                <a href="#"><img src="https://cdnjs.cloudflare.com/ajax/libs/simple-icons/3.0.1/twitter.svg" alt="Twitter"></a>
+                <a href="#"><img src="https://cdnjs.cloudflare.com/ajax/libs/simple-icons/3.0.1/facebook.svg" alt="Facebook"></a>
+                <a href="#"><img src="https://cdnjs.cloudflare.com/ajax/libs/simple-icons/3.0.1/youtube.svg" alt="YouTube"></a>
+                <a href="#"><img src="https://cdnjs.cloudflare.com/ajax/libs/simple-icons/3.0.1/gmail.svg" alt="Gmail"></a>
+            </div>
+        </div>
+    </footer>
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+    const menuToggle = document.querySelector('.menu-toggle');
+    const featuredToggle = document.querySelector('.toggle-featured');
+    const featuredPosts = document.getElementById('featured-posts');
+
+    menuToggle.addEventListener('click', function () {
+        toggleMenu();
+    });
+
+    featuredToggle.addEventListener('click', function () {
+        featuredPosts.classList.toggle('closed');
+    });
+
+    function toggleMenu() {
+        const nav = document.querySelector('nav');
+        nav.classList.toggle('active');
+    }
+});
+
+    </script>
+</body>
+</html>

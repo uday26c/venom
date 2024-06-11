@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About Us</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f5f5f5;
+            color: #333;
+        }
+
+    
+        /* Header Styles */
+header {
+    background-color: #333;
+    color: #fff;
+    padding: 20px 0;
+}
+
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+header h1 {
+    margin: 0;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+/* Dropdown Styles */
+.dropbtn {
+    background-color: #007bff;
+    color: white;
+    padding: 10px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.dropdown {
+    position: relative;
+    display: inline-block;
+}
+
+.dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 160px;
+    z-index: 1;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    border-radius: 5px;
+}
+
+.dropdown-content a {
+    color: black;
+    padding: 12px 16px;
+    text-decoration: none;
+    display: block;
+}
+
+.dropdown-content a:hover {
+    background-color: #f1f1f1;
+}
+
+.dropdown:hover .dropdown-content {
+    display: block;
+}
+
+        main {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            padding: 20px;
+        }
+
+        .image-section img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+        }
+
+        .text-section {
+            max-width: 800px;
+            text-align: center;
+            margin: 20px 0;
+        }
+
+        .text-section h2 {
+            color: #4CAF50;
+            margin-bottom: 10px;
+        }
+
+        .text-section p {
+            font-size: 1.2em;
+            margin-bottom: 20px;
+        }
+
+        .text-section blockquote {
+            font-size: 1.5em;
+            color: #555;
+            border-left: 5px solid #4CAF50;
+            padding-left: 10px;
+            font-style: italic;
+        }
+
+        footer {
+            background-color:  #333;/* Dark blue */
+            padding: 20px;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+            color: #fff;
+        }
+
+        .about-us,
+        .quick-links,
+        .share {
+            flex: 1;
+            margin-right: 20px;
+        }
+
+        .about-us h3,
+        .quick-links h3,
+        .share h3 {
+            margin-bottom: 10px;
+        }
+
+        .quick-links ul {
+            list-style-type: none;
+            padding: 0;
+        }
+
+        .quick-links li {
+            margin-bottom: 5px;
+        }
+
+        .quick-links a {
+            text-decoration: none;
+            color: #ccc;
+        }
+
+        .social-icons {
+            display: flex;
+            align-items: center;
+        }
+
+        .social-icons a {
+            margin-right: 15px;
+            transition: transform 0.3s ease;
+        }
+
+        .social-icons a:hover {
+            transform: scale(1.2);
+        }
+
+        .social-icons img {
+            width: 30px;
+            height: 30px;
+        }
+
+        .menu-toggle {
+    display: none;
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: #fff;
+}
+
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+        position: absolute;
+        top: 20px;
+        right: 20px;
+    }
+
+    header {
+        position: relative;
+    }
+
+    nav {
+        display: none;
+        position: absolute;
+        top: 100%;
+        left: 0;
+        width: 100%;
+        background-color: #333;
+        z-index: 1000;
+    }
+
+    nav.active {
+        display: block;
+    }
+
+    nav ul {
+        padding: 20px;
+        margin: 0;
+        list-style-type: none;
+        text-align: center;
+    }
+
+    nav ul li {
+        margin-bottom: 10px;
+    }
+
+    nav ul li:last-child {
+        margin-bottom: 0;
+    }
+
+    nav ul li a {
+        color: #fff;
+        text-decoration: none;
+        font-size: 18px;
+    }
+}
+
+@media (min-width: 769px) {
+    nav {
+        display: block;
+    }
+}
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Welcome to My Blog</h1>
+            <button class="menu-toggle" aria-label="Toggle Menu">&#9776;</button>
+            <nav>
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li class="dropdown">
+                        <a href="post.html" class="dropbtn">Posts &#9662;</a>
+                        <div class="dropdown-content">
+                            <a href="#">Latest Posts</a>
+                            <a href="#">Categories</a>
+                        </div>
+                    </li>
+                    <li><a href="aboutus.html">About</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+    
+    <main>
+        <section class="image-section">
+            <img src="https://cdn.pixabay.com/photo/2020/04/04/13/41/corona-5002341_640.jpg" alt="About Us Image">
+        </section>
+        <section class="text-section">
+            <h2>Our Mission</h2>
+            <p>We strive to make the world a better place through innovative solutions and dedicated service. Our mission is to empower individuals and communities to achieve their fullest potential.</p>
+            <blockquote>
+                "The only way to do great work is to love what you do." - Steve Jobs
+            </blockquote>
+        </section>
+    </main>
+    <footer>
+        <div class="about-us">
+            <h3>About Us</h3>
+            <p>We are dedicated to providing quality content and resources for fitness enthusiasts.</p>
+        </div>
+        <div class="quick-links">
+            <h3>Quick Links</h3>
+            <ul>
+                <li><a href="#">Home</a></li>
+                <li><a href="#">Blog</a></li>
+                <li><a href="#">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </ul>
+        </div>
+        <div class="share">
+            <h3>Share</h3>
+            <div class="social-icons">
+                <a href="#"><img src="https://cdnjs.cloudflare.com/ajax/libs/simple-icons/3.0.1/instagram.svg" alt="Instagram"></a>
+                <a href="#"><img src="https://cdnjs.cloudflare.com/ajax/libs/simple-icons/3.0.1/twitter.svg" alt="Twitter"></a>
+                <a href="#"><img src="https://cdnjs.cloudflare.com/ajax/libs/simple-icons/3.0.1/facebook.svg" alt="Facebook"></a>
+                <a href="#"><img src="https://cdnjs.cloudflare.com/ajax/libs/simple-icons/3.0.1/youtube.svg" alt="YouTube"></a>
+                <a href="#"><img src="https://cdnjs.cloudflare.com/ajax/libs/simple-icons/3.0.1/gmail.svg" alt="Gmail"></a>
+            </div>
+        </div>
+    </footer>
+</body>
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+const menuToggle = document.querySelector('.menu-toggle');
+const featuredToggle = document.querySelector('.toggle-featured');
+const featuredPosts = document.getElementById('featured-posts');
+
+menuToggle.addEventListener('click', function () {
+    toggleMenu();
+});
+
+featuredToggle.addEventListener('click', function () {
+    featuredPosts.classList.toggle('closed');
+});
+
+function toggleMenu() {
+    const nav = document.querySelector('nav');
+    nav.classList.toggle('active');
+}
+});
+
+</script>
+</html>
